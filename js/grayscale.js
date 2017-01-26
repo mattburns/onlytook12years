@@ -48,12 +48,12 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(51.453642, -2.596958), // midpoint
 
         // Disables the default Google Maps UI components
-        disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
+        disableDefaultUI: false,
+        scrollwheel: true,
+        draggable: true,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -176,10 +176,51 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
+    var glassboatLatLng = new google.maps.LatLng(51.453365, -2.592151);
+    var glassboatMarker = new google.maps.Marker({
+        position: glassboatLatLng,
         map: map,
         icon: image
     });
+    var stgeorgesLatLng = new google.maps.LatLng(51.454003, -2.603513);
+    var stgeorgesMarker = new google.maps.Marker({
+        position: stgeorgesLatLng,
+        map: map,
+        icon: image
+    });
+    
+    var glassboatInfo = '<div id="content" style="color:black;">'+
+            '<h1 id="firstHeading" class="firstHeading">12:30pm - Ceremony</h1>'+
+            '<div id="bodyContent">'+
+            '<p>The Ceremony will be held on the <b>Glassboat</b> which is situated on Welshback in Bristol’s historic floating harbour. <br/><a href="http://www.glassboat.co.uk/">'+
+            'www.glassboat.co.uk</a></p>'+
+            '</div>'+
+            '</div>';
+    
+    var stgeorgestInfo = '<div id="content" style="color:black;">'+
+            '<h1 id="firstHeading" class="firstHeading">3:00pm - Reception</h1>'+
+            '<div id="bodyContent">'+
+            '<p>The Reception will be held at <b>St. George’s</b>, a concert hall in the centre of Bristol.<br/><a href="http://www.stgeorgesbristol.co.uk/">'+
+            'www.stgeorgesbristol.co.uk</a></p>'+
+            '</div>'+
+            '</div>';
+    
+    var glassboatInfoWindow = new google.maps.InfoWindow({
+      content: glassboatInfo
+    });
+    
+    var stgeorgestInfoWindow = new google.maps.InfoWindow({
+      content: stgeorgestInfo
+    });
+    
+    glassboatMarker.addListener('click', function() {
+        glassboatInfoWindow.open(map, glassboatMarker);
+        stgeorgestInfoWindow.close();
+    });
+
+    stgeorgesMarker.addListener('click', function() {
+        stgeorgestInfoWindow.open(map, stgeorgesMarker);
+        glassboatInfoWindow.close();
+    });
+    
 }
