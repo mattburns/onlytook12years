@@ -2,6 +2,10 @@
 
 Wedding website
 
+    rm -rf node_modules/
+    npm install
+    gulp dev
+
 ## Forked from Grayscale:
 
 [Start Bootstrap](http://startbootstrap.com/) - [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
