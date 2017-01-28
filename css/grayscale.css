@@ -227,7 +227,7 @@ a:focus {
 .content-section {
   padding: 50px 0;
 }
-body section:nth-child(3n),
+body section:nth-child(3n+1),
 footer {
   padding: 50px 0;
   width: 100%;
