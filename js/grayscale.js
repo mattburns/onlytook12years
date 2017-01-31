@@ -61,9 +61,9 @@ function init() {
             "featureType": "water",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#222233"
             }, {
-                "lightness": 17
+                "lightness": 14
             }]
         }, {
             "featureType": "landscape",
@@ -190,18 +190,16 @@ function init() {
     });
     
     var glassboatInfo = '<div id="content" style="color:black;">'+
-            '<h1 id="firstHeading" class="firstHeading">12:30pm - Ceremony</h1>'+
+            '<h4 id="firstHeading" class="firstHeading">Glassboat</h4>'+
             '<div id="bodyContent">'+
-            '<p>The Ceremony will be held on the <b>Glassboat</b> which is situated on Welshback in Bristol’s historic floating harbour. <br/><a href="http://www.glassboat.co.uk/">'+
-            'www.glassboat.co.uk</a> (<a href="https://www.google.co.uk/maps/place/GlassBoat/@51.451278,-2.5942193,16.73z/data=!4m5!3m4!1s0x0:0xe9775ee77103389b!8m2!3d51.4533634!4d-2.5921485">directions</a>)</p>'+
+            '<p><a href="https://www.google.co.uk/maps/place/GlassBoat/@51.451278,-2.5942193,16.73z/data=!4m5!3m4!1s0x0:0xe9775ee77103389b!8m2!3d51.4533634!4d-2.5921485" class="btn btn-default btn-lg">directions</a></p>'+
             '</div>'+
             '</div>';
     
     var stgeorgestInfo = '<div id="content" style="color:black;">'+
-            '<h1 id="firstHeading" class="firstHeading">3:00pm - Reception</h1>'+
+            '<h3 id="firstHeading" class="firstHeading">St Georges</h3>'+
             '<div id="bodyContent">'+
-            '<p>The Reception will be held at <b>St. George’s</b>, a concert hall in the centre of Bristol.<br/><a href="http://www.stgeorgesbristol.co.uk/">'+
-            'www.stgeorgesbristol.co.uk</a> (<a href="https://www.google.co.uk/maps/place/12+Great+George+St,+Bristol+BS1/@51.453747,-2.6046662,18z/data=!3m1!4b1!4m5!3m4!1s0x48718dd096d5b6e1:0x52eeeb6756452fe3!8m2!3d51.4539906!4d-2.6034413">directions</a>)</p>'+
+            '<p><a href="https://www.google.co.uk/maps/place/12+Great+George+St,+Bristol+BS1/@51.453747,-2.6046662,18z/data=!3m1!4b1!4m5!3m4!1s0x48718dd096d5b6e1:0x52eeeb6756452fe3!8m2!3d51.4539906!4d-2.6034413" class="btn btn-default btn-lg">directions</a></p>'+
             '</div>'+
             '</div>';
     
