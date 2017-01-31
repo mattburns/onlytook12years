@@ -190,7 +190,7 @@ function init() {
     });
     
     var glassboatInfo = '<div id="content" style="color:black;">'+
-            '<h4 id="firstHeading" class="firstHeading">Glassboat</h4>'+
+            '<h3 id="firstHeading" class="firstHeading">Glassboat</h3>'+
             '<div id="bodyContent">'+
             '<p><a href="https://www.google.co.uk/maps/place/GlassBoat/@51.451278,-2.5942193,16.73z/data=!4m5!3m4!1s0x0:0xe9775ee77103389b!8m2!3d51.4533634!4d-2.5921485" class="btn btn-default btn-lg">directions</a></p>'+
             '</div>'+
