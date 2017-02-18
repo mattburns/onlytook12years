@@ -57,6 +57,9 @@ gulp.task('copy', function() {
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'))
+    
+    gulp.src(['node_modules/moment/moment.js', 'node_modules/moment/min/moment.min.js'])
+        .pipe(gulp.dest('vendor/moment'))
 
     gulp.src([
             'node_modules/font-awesome/**',

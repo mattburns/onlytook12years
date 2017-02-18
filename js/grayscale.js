@@ -32,6 +32,8 @@ $('.navbar-collapse ul li a').click(function(){
     $('.navbar-toggle:visible').click();
 });
 
+$('#countdown').text(" " + moment("20170415", "YYYYMMDD").fromNow());
+
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
