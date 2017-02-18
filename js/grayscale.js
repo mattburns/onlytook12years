@@ -32,7 +32,7 @@ $('.navbar-collapse ul li a').click(function(){
     $('.navbar-toggle:visible').click();
 });
 
-$('#countdown').text(" " + moment("20170415", "YYYYMMDD").fromNow());
+$('#countdown').text(" " + moment("201704151230", "YYYYMMDDhhmm").fromNow());
 
 // Google Maps Scripts
 var map = null;
