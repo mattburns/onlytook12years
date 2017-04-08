@@ -56,6 +56,7 @@ function init() {
         disableDefaultUI: false,
         scrollwheel: true,
         draggable: true,
+        gestureHandling: 'cooperative', // 2 finger to zoom on mobile
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
